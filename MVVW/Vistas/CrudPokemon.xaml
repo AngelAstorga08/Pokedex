@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVW.Vistas.CrudPokemon"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="FlechaVolver.png"
+                   VerticalOptions="Start"
+                   HeightRequest="50"
+                   WidthRequest="60"
+                   HorizontalOptions="Start"
+                   Margin="10">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Volver}"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
